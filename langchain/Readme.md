@@ -53,7 +53,8 @@ result = register_tool.run(
     name="Math Problem Solver",
     port=8080,
     description="A LangChain agent that solves math problems",
-    api_token=api_key
+    api_token=api_key,
+    mailbox=True
 )
 
 print(f"Agent registered with address: {register_tool.get_agent_info().get('address')}")
@@ -120,7 +121,8 @@ def main():
         name="Knowledge Assistant",
         port=8080,
         description="A LangChain agent that can solve math problems and answer questions using Wikipedia",
-        api_token=api_key
+        api_token=api_key,
+        mailbox=True
     )
     
     print(f"\nLangChain agent registration result: {result}")
@@ -211,7 +213,8 @@ result = register_tool.run(
     name="Custom Specialist",
     port=8080,
     description="A custom LangChain agent that specializes in a specific domain",
-    api_token=api_key
+    api_token=api_key,
+    mailbox=True
 )
 ```
 
@@ -237,6 +240,7 @@ result = register_tool.run(
     name="Topic Explainer",
     port=8080,
     description="A LangChain chain that explains topics",
-    api_token=api_key
+    api_token=api_key,
+    mailbox=True
 )
 ``` 
